@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9f2;
+    color: #26352b;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e89b00;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #26352b;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e89b00;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    padding: 80px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #fff8d6,
+        #e8f5df
+    );
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #264d35;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #f2a900;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d88f00;
+}
+
+
+/* ICONO */
+
+.solar-icon {
+    font-size: 150px;
+    text-align: center;
+}
+
+.solar-icon div {
+    font-size: 70px;
+}
+
+
+/* SECCIONES */
+
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2,
+.calculator h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #264d35;
+}
+
+
+/* TARJETAS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #2e6743;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* FUNCIONAMIENTO */
+
+.funcionamiento {
+    background-color: #e8f3e6;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.step {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.step span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: #f2a900;
+    color: white;
+
+    border-radius: 50%;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+
+/* CALCULADORA */
+
+.calculator {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.calculator p {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 14px;
+    width: 250px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+#resultado {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e6743;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #264d35;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .solar-icon {
+        font-size: 100px;
+    }
+
+    .solar-icon div {
+        font-size: 50px;
+    }
+
+    .step {
+        width: 100%;
+    }
+}

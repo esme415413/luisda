@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paneles Solares</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">☀️ SolarEco</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#funcionamiento">¿Cómo funciona?</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>La energía del sol para un futuro mejor</h1>
+
+                <p>
+                    Los paneles solares permiten aprovechar la energía del sol
+                    para producir electricidad de una manera limpia y renovable.
+                </p>
+
+                <button id="beneficiosBtn">
+                    Conocer beneficios
+                </button>
+            </div>
+
+            <div class="solar-icon">
+                ☀️
+                <div>🔋</div>
+            </div>
+        </section>
+
+
+        <section id="beneficios" class="section">
+            <h2>Beneficios de los paneles solares</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Energía limpia</h3>
+                    <p>
+                        La energía solar es renovable y durante su generación
+                        no produce emisiones directas de gases contaminantes.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Ahorro</h3>
+                    <p>
+                        Un sistema solar puede ayudar a reducir el consumo
+                        de electricidad de la red y, dependiendo del caso,
+                        disminuir el valor de la factura.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">♻️</div>
+                    <h3>Recurso renovable</h3>
+                    <p>
+                        El sol es una fuente de energía renovable que puede
+                        aprovecharse de manera continua.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🏠</div>
+                    <h3>Para hogares y empresas</h3>
+                    <p>
+                        Los sistemas fotovoltaicos pueden utilizarse en
+                        viviendas, negocios, instituciones y otros espacios.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section id="funcionamiento" class="section funcionamiento">
+
+            <h2>¿Cómo funcionan los paneles solares?</h2>
+
+            <div class="steps">
+
+                <div class="step">
+                    <span>1</span>
+                    <h3>☀️ Captación</h3>
+                    <p>
+                        Las células fotovoltaicas reciben la luz solar.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <span>2</span>
+                    <h3>⚡ Conversión</h3>
+                    <p>
+                        La energía solar se transforma en electricidad.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <span>3</span>
+                    <h3>🔌 Uso</h3>
+                    <p>
+                        La electricidad puede utilizarse para alimentar
+                        diferentes dispositivos y sistemas.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="calculator">
+
+            <h2>Calcula tu ahorro aproximado</h2>
+
+            <p>
+                Ingresa cuánto pagas aproximadamente de electricidad al mes.
+            </p>
+
+            <input
+                type="number"
+                id="factura"
+                placeholder="Ejemplo: 150000"
+                min="0"
+            >
+
+            <button id="calcularBtn">
+                Calcular
+            </button>
+
+            <p id="resultado"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>☀️ SolarEco - Aprende sobre energía solar</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

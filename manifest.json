@@ -1,0 +1,11 @@
+{
+    "name": "SolarEco - Paneles Solares",
+    "short_name": "SolarEco",
+    "description": "Aplicación educativa sobre paneles solares y sus beneficios",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#f5f9f2",
+    "theme_color": "#f2a900",
+    "orientation": "portrait",
+    "icons": []
+}
