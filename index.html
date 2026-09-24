@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paneles Solares</title>
+    <title>SolarEco | Energía Solar</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
@@ -12,113 +12,712 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="logo">☀️ SolarEco</div>
 
         <nav>
             <a href="#inicio">Inicio</a>
+            <a href="#que-es">¿Qué es?</a>
+            <a href="#funcionamiento">Funcionamiento</a>
+            <a href="#componentes">Componentes</a>
             <a href="#beneficios">Beneficios</a>
-            <a href="#funcionamiento">¿Cómo funciona?</a>
+            <a href="#colombia">Colombia</a>
+            <a href="#calculadora">Calculadora</a>
         </nav>
     </header>
 
+
     <main>
 
+        <!-- HERO -->
         <section id="inicio" class="hero">
+
             <div class="hero-text">
-                <h1>La energía del sol para un futuro mejor</h1>
+
+                <span class="hero-tag">ENERGÍA LIMPIA • FUTURO SOSTENIBLE</span>
+
+                <h1>
+                    La energía del Sol para un futuro mejor
+                </h1>
 
                 <p>
-                    Los paneles solares permiten aprovechar la energía del sol
-                    para producir electricidad de una manera limpia y renovable.
+                    Los paneles solares permiten aprovechar la radiación del Sol
+                    para producir electricidad mediante una fuente de energía
+                    renovable y sostenible.
                 </p>
 
-                <button id="beneficiosBtn">
-                    Conocer beneficios
-                </button>
+                <div class="hero-buttons">
+                    <button id="beneficiosBtn">
+                        Conocer beneficios
+                    </button>
+
+                    <a href="#que-es" class="secondary-btn">
+                        Explorar
+                    </a>
+                </div>
+
             </div>
 
-            <div class="solar-icon">
-                ☀️
-                <div>🔋</div>
+
+            <div class="solar-illustration">
+
+                <div class="sun">☀️</div>
+
+                <div class="panel">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="battery">🔋</div>
+
             </div>
+
         </section>
 
 
-        <section id="beneficios" class="section">
-            <h2>Beneficios de los paneles solares</h2>
+        <!-- INTRODUCCIÓN -->
+        <section id="que-es" class="section introduction">
+
+            <div class="section-heading">
+
+                <span>CONOCE LA ENERGÍA SOLAR</span>
+
+                <h2>¿Qué es la energía solar?</h2>
+
+                <p>
+                    La energía solar es la energía que obtenemos de la radiación
+                    emitida por el Sol. Puede aprovecharse mediante diferentes
+                    tecnologías, entre ellas los sistemas solares fotovoltaicos.
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <article class="info-box">
+                    <div class="big-icon">☀️</div>
+                    <h3>Una fuente renovable</h3>
+
+                    <p>
+                        El Sol es una fuente natural de energía que se renueva
+                        continuamente y puede aprovecharse para diferentes
+                        aplicaciones.
+                    </p>
+                </article>
+
+
+                <article class="info-box">
+                    <div class="big-icon">⚡</div>
+                    <h3>Energía fotovoltaica</h3>
+
+                    <p>
+                        Los paneles fotovoltaicos convierten la radiación solar
+                        en electricidad mediante células fabricadas con
+                        materiales semiconductores.
+                    </p>
+                </article>
+
+
+                <article class="info-box">
+                    <div class="big-icon">🌎</div>
+                    <h3>Una alternativa sostenible</h3>
+
+                    <p>
+                        La energía solar puede contribuir a diversificar las
+                        fuentes de generación eléctrica y disminuir la
+                        dependencia de combustibles fósiles.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUNCIONAMIENTO -->
+        <section id="funcionamiento" class="section funcionamiento">
+
+            <div class="section-heading">
+
+                <span>EL PROCESO</span>
+
+                <h2>¿Cómo funcionan los paneles solares?</h2>
+
+                <p>
+                    Un sistema fotovoltaico transforma la luz solar en
+                    electricidad que puede utilizarse en diferentes espacios.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <span>1</span>
+
+                    <div class="step-icon">☀️</div>
+
+                    <h3>Captación</h3>
+
+                    <p>
+                        Las células fotovoltaicas reciben la radiación solar
+                        que llega a la superficie de los paneles.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <span>2</span>
+
+                    <div class="step-icon">⚡</div>
+
+                    <h3>Generación</h3>
+
+                    <p>
+                        Las células fotovoltaicas producen electricidad en
+                        forma de corriente continua.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <span>3</span>
+
+                    <div class="step-icon">🔄</div>
+
+                    <h3>Conversión</h3>
+
+                    <p>
+                        El inversor transforma la electricidad para que pueda
+                        utilizarse en los equipos eléctricos.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <span>4</span>
+
+                    <div class="step-icon">🏠</div>
+
+                    <h3>Uso</h3>
+
+                    <p>
+                        La electricidad puede utilizarse en hogares, empresas,
+                        instituciones y otros espacios.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPONENTES -->
+        <section id="componentes" class="section">
+
+            <div class="section-heading">
+
+                <span>CONOCE EL SISTEMA</span>
+
+                <h2>Partes de un sistema solar</h2>
+
+                <p>
+                    Un sistema fotovoltaico está compuesto por diferentes
+                    elementos que trabajan conjuntamente.
+                </p>
+
+            </div>
+
+
+            <div class="cards component-cards">
+
+                <article class="card">
+                    <div class="card-icon">☀️</div>
+
+                    <h3>Paneles solares</h3>
+
+                    <p>
+                        Captan la radiación solar y la convierten en energía
+                        eléctrica mediante células fotovoltaicas.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">⚡</div>
+
+                    <h3>Inversor</h3>
+
+                    <p>
+                        Convierte la corriente continua generada por los
+                        paneles en corriente alterna utilizable.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">🔋</div>
+
+                    <h3>Baterías</h3>
+
+                    <p>
+                        En los sistemas que cuentan con almacenamiento,
+                        permiten guardar energía para utilizarla posteriormente.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">🏗️</div>
+
+                    <h3>Estructura</h3>
+
+                    <p>
+                        Sostiene los paneles y permite instalarlos con una
+                        orientación e inclinación adecuadas.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">🔌</div>
+
+                    <h3>Cableado</h3>
+
+                    <p>
+                        Transporta la electricidad entre los diferentes
+                        componentes del sistema.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">🛡️</div>
+
+                    <h3>Protecciones</h3>
+
+                    <p>
+                        Ayudan a proteger la instalación frente a diferentes
+                        condiciones eléctricas.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFICIOS -->
+        <section id="beneficios" class="section benefits-section">
+
+            <div class="section-heading">
+
+                <span>¿POR QUÉ UTILIZARLA?</span>
+
+                <h2>Beneficios de los paneles solares</h2>
+
+            </div>
+
 
             <div class="cards">
 
                 <article class="card">
                     <div class="card-icon">🌱</div>
+
                     <h3>Energía limpia</h3>
+
                     <p>
-                        La energía solar es renovable y durante su generación
-                        no produce emisiones directas de gases contaminantes.
+                        Durante la generación de electricidad, los sistemas
+                        fotovoltaicos no producen emisiones directas de gases
+                        contaminantes.
                     </p>
                 </article>
+
 
                 <article class="card">
                     <div class="card-icon">💰</div>
+
                     <h3>Ahorro</h3>
+
                     <p>
-                        Un sistema solar puede ayudar a reducir el consumo
-                        de electricidad de la red y, dependiendo del caso,
-                        disminuir el valor de la factura.
+                        Dependiendo del sistema y del consumo, puede reducirse
+                        la cantidad de electricidad comprada a la red.
                     </p>
                 </article>
+
 
                 <article class="card">
                     <div class="card-icon">♻️</div>
+
                     <h3>Recurso renovable</h3>
+
                     <p>
-                        El sol es una fuente de energía renovable que puede
-                        aprovecharse de manera continua.
+                        Utiliza la radiación del Sol, una fuente de energía
+                        renovable disponible de manera natural.
                     </p>
                 </article>
+
 
                 <article class="card">
                     <div class="card-icon">🏠</div>
-                    <h3>Para hogares y empresas</h3>
+
+                    <h3>Versatilidad</h3>
+
                     <p>
-                        Los sistemas fotovoltaicos pueden utilizarse en
-                        viviendas, negocios, instituciones y otros espacios.
+                        Puede utilizarse en viviendas, empresas, colegios,
+                        industrias y diferentes instalaciones.
                     </p>
                 </article>
 
             </div>
+
         </section>
 
 
-        <section id="funcionamiento" class="section funcionamiento">
+        <!-- VENTAJAS Y ASPECTOS -->
+        <section class="section comparison-section">
 
-            <h2>¿Cómo funcionan los paneles solares?</h2>
+            <div class="section-heading">
 
-            <div class="steps">
+                <span>UNA VISIÓN COMPLETA</span>
 
-                <div class="step">
-                    <span>1</span>
-                    <h3>☀️ Captación</h3>
+                <h2>Ventajas y aspectos a considerar</h2>
+
+            </div>
+
+
+            <div class="comparison">
+
+                <div class="comparison-box positive">
+
+                    <h3>✓ Ventajas</h3>
+
+                    <ul>
+                        <li>Fuente de energía renovable.</li>
+                        <li>No genera emisiones directas durante la generación.</li>
+                        <li>Puede disminuir el consumo de electricidad de la red.</li>
+                        <li>Puede instalarse en diferentes tipos de espacios.</li>
+                        <li>Puede combinarse con baterías.</li>
+                        <li>Requiere relativamente poco mantenimiento.</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="comparison-box considerations">
+
+                    <h3>! Aspectos a considerar</h3>
+
+                    <ul>
+                        <li>La instalación inicial puede representar una inversión importante.</li>
+                        <li>La producción depende de la radiación solar disponible.</li>
+                        <li>Se necesita espacio para instalar los paneles.</li>
+                        <li>Las sombras pueden reducir la producción.</li>
+                        <li>Los componentes necesitan revisiones periódicas.</li>
+                        <li>Las baterías pueden aumentar el costo del sistema.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- APLICACIONES -->
+        <section class="section applications">
+
+            <div class="section-heading">
+
+                <span>EN DIFERENTES ESPACIOS</span>
+
+                <h2>¿Dónde se puede utilizar?</h2>
+
+            </div>
+
+
+            <div class="application-grid">
+
+                <div>🏠<strong>Viviendas</strong></div>
+                <div>🏢<strong>Edificios</strong></div>
+                <div>🏫<strong>Colegios</strong></div>
+                <div>🏭<strong>Industrias</strong></div>
+                <div>🏪<strong>Comercios</strong></div>
+                <div>🚜<strong>Zonas rurales</strong></div>
+                <div>💧<strong>Bombeo de agua</strong></div>
+                <div>💡<strong>Alumbrado</strong></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DÍAS NUBLADOS -->
+        <section class="section cloudy-section">
+
+            <div class="cloudy-content">
+
+                <div class="cloudy-icon">
+                    🌥️
+                </div>
+
+                <div>
+
+                    <span>UNA DUDA FRECUENTE</span>
+
+                    <h2>
+                        ¿Los paneles funcionan cuando está nublado?
+                    </h2>
+
                     <p>
-                        Las células fotovoltaicas reciben la luz solar.
+                        Sí. Los paneles solares pueden producir electricidad
+                        incluso cuando el cielo está nublado, ya que todavía
+                        existe radiación solar. Sin embargo, normalmente la
+                        producción será menor que durante un día con mayor
+                        iluminación.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FACTORES -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span>PRODUCCIÓN DE ENERGÍA</span>
+
+                <h2>¿Qué factores afectan su rendimiento?</h2>
+
+            </div>
+
+
+            <div class="factor-grid">
+
+                <article>
+                    <span>☀️</span>
+                    <h3>Radiación solar</h3>
+                    <p>
+                        La cantidad de radiación disponible influye directamente
+                        en la energía que pueden producir los paneles.
+                    </p>
+                </article>
+
+
+                <article>
+                    <span>📐</span>
+                    <h3>Orientación e inclinación</h3>
+                    <p>
+                        La posición de los paneles determina cuánta radiación
+                        pueden recibir.
+                    </p>
+                </article>
+
+
+                <article>
+                    <span>🌳</span>
+                    <h3>Sombras</h3>
+                    <p>
+                        Los árboles y edificios pueden bloquear la luz y
+                        disminuir la producción.
+                    </p>
+                </article>
+
+
+                <article>
+                    <span>🧽</span>
+                    <h3>Limpieza</h3>
+                    <p>
+                        El polvo y la suciedad acumulada pueden reducir la
+                        cantidad de luz que llega a las células.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MANTENIMIENTO -->
+        <section class="section maintenance">
+
+            <div class="section-heading">
+
+                <span>CUIDADO DEL SISTEMA</span>
+
+                <h2>Mantenimiento de los paneles</h2>
+
+                <p>
+                    Aunque los sistemas solares requieren relativamente poco
+                    mantenimiento, es importante revisar periódicamente sus
+                    componentes.
+                </p>
+
+            </div>
+
+
+            <div class="maintenance-list">
+
+                <div>✓ Revisar periódicamente los paneles.</div>
+                <div>✓ Mantener limpia la superficie cuando sea necesario.</div>
+                <div>✓ Revisar cables y conexiones.</div>
+                <div>✓ Comprobar el funcionamiento del inversor.</div>
+                <div>✓ Vigilar posibles daños físicos.</div>
+                <div>✓ Realizar revisiones técnicas cuando sean necesarias.</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLOMBIA -->
+        <section id="colombia" class="section colombia">
+
+            <div class="colombia-content">
+
+                <div class="colombia-flag">
+                    🇨🇴
+                </div>
+
+                <div>
+
+                    <span>ENERGÍA SOLAR EN COLOMBIA</span>
+
+                    <h2>Un país con potencial solar</h2>
+
+                    <p>
+                        Colombia cuenta con diferentes regiones que presentan
+                        condiciones favorables para el aprovechamiento de la
+                        energía solar. La radiación disponible varía según la
+                        ubicación geográfica y las condiciones climáticas.
+                    </p>
+
+                    <p>
+                        El desarrollo de proyectos solares permite diversificar
+                        las fuentes de generación eléctrica y puede contribuir
+                        al uso de fuentes renovables.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENERGÍA SOBRANTE -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span>¿QUÉ PASA CON LA ENERGÍA?</span>
+
+                <h2>¿Qué ocurre con la electricidad que no utilizamos?</h2>
+
+                <p>
+                    Dependiendo del tipo de instalación, la energía producida
+                    puede utilizarse directamente, almacenarse o, en algunos
+                    sistemas conectados a la red, enviarse a la red eléctrica
+                    bajo las condiciones correspondientes.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUTURO -->
+        <section class="future-section">
+
+            <div>
+
+                <span>EL FUTURO</span>
+
+                <h2>La energía solar continúa evolucionando</h2>
+
+                <p>
+                    Las nuevas tecnologías buscan mejorar la eficiencia de los
+                    paneles, el almacenamiento de energía y la gestión de los
+                    sistemas eléctricos.
+                </p>
+
+                <p>
+                    La combinación de paneles solares, baterías y redes
+                    inteligentes puede permitir un uso cada vez más flexible
+                    de la electricidad generada a partir del Sol.
+                </p>
+
+            </div>
+
+            <div class="future-icon">
+                ☀️⚡🔋
+            </div>
+
+        </section>
+
+
+        <!-- DATOS CURIOSOS -->
+        <section class="section facts">
+
+            <div class="section-heading">
+
+                <span>¿SABÍAS QUE?</span>
+
+                <h2>Datos curiosos sobre la energía solar</h2>
+
+            </div>
+
+
+            <div class="fact-grid">
+
+                <div>
+                    ☀️
+                    <p>
+                        El Sol proporciona una enorme cantidad de energía a la
+                        Tierra diariamente.
                     </p>
                 </div>
 
-                <div class="step">
-                    <span>2</span>
-                    <h3>⚡ Conversión</h3>
+                <div>
+                    🔋
                     <p>
-                        La energía solar se transforma en electricidad.
+                        La energía solar puede combinarse con sistemas de
+                        almacenamiento.
                     </p>
                 </div>
 
-                <div class="step">
-                    <span>3</span>
-                    <h3>🔌 Uso</h3>
+                <div>
+                    🌥️
                     <p>
-                        La electricidad puede utilizarse para alimentar
-                        diferentes dispositivos y sistemas.
+                        Los paneles pueden producir electricidad incluso en
+                        condiciones de nubosidad.
+                    </p>
+                </div>
+
+                <div>
+                    ♻️
+                    <p>
+                        Algunos materiales de los paneles pueden recuperarse
+                        mediante procesos de reciclaje.
                     </p>
                 </div>
 
@@ -127,7 +726,10 @@
         </section>
 
 
-        <section class="calculator">
+        <!-- CALCULADORA -->
+        <section id="calculadora" class="calculator">
+
+            <span>HAZ UNA ESTIMACIÓN</span>
 
             <h2>Calcula tu ahorro aproximado</h2>
 
@@ -135,26 +737,59 @@
                 Ingresa cuánto pagas aproximadamente de electricidad al mes.
             </p>
 
-            <input
-                type="number"
-                id="factura"
-                placeholder="Ejemplo: 150000"
-                min="0"
-            >
+            <div class="calculator-box">
 
-            <button id="calcularBtn">
-                Calcular
-            </button>
+                <div class="input-group">
 
-            <p id="resultado"></p>
+                    <label for="factura">
+                        Valor mensual de tu factura
+                    </label>
+
+                    <input
+                        type="number"
+                        id="factura"
+                        placeholder="Ejemplo: 150000"
+                        min="0"
+                    >
+
+                </div>
+
+                <button id="calcularBtn">
+                    Calcular ahorro
+                </button>
+
+                <p id="resultado"></p>
+
+                <small>
+                    *Esta calculadora utiliza una estimación educativa del
+                    30 %. El ahorro real depende de las características de
+                    cada instalación y del consumo energético.
+                </small>
+
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- FOOTER -->
     <footer>
-        <p>☀️ SolarEco - Aprende sobre energía solar</p>
+
+        <div class="footer-logo">
+            ☀️ SolarEco
+        </div>
+
+        <p>
+            Aprende, descubre y conoce el potencial de la energía solar.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            Proyecto educativo sobre energía solar
+        </small>
+
     </footer>
 
 
