@@ -12,39 +12,47 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f9f2;
     color: #26352b;
+    line-height: 1.6;
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
+    padding: 18px 6%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     color: #e89b00;
+    white-space: nowrap;
 }
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: #26352b;
     font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -52,15 +60,18 @@ nav a:hover {
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    min-height: 500px;
+    min-height: 650px;
     padding: 80px 10%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 60px;
 
     background: linear-gradient(
         135deg,
@@ -70,19 +81,37 @@ nav a:hover {
 }
 
 .hero-text {
-    max-width: 600px;
+    max-width: 650px;
+}
+
+.hero-tag,
+.section-heading span,
+.cloudy-content span,
+.colombia-content span,
+.future-section span,
+.calculator > span {
+    color: #d88f00;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 52px;
+    line-height: 1.1;
+    margin: 15px 0 25px;
     color: #264d35;
 }
 
 .hero p {
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 19px;
     margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 button {
@@ -94,41 +123,205 @@ button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: #d88f00;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    text-decoration: none;
+    color: #2e6743;
+    border: 2px solid #2e6743;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background-color: #2e6743;
+    color: white;
 }
 
 
-/* ICONO */
+/* HERO ILUSTRACIÓN */
 
-.solar-icon {
-    font-size: 150px;
-    text-align: center;
+.solar-illustration {
+    position: relative;
+    width: 350px;
+    height: 350px;
 }
 
-.solar-icon div {
-    font-size: 70px;
+.sun {
+    font-size: 130px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    animation: floating 4s ease-in-out infinite;
+}
+
+.panel {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+
+    width: 250px;
+    height: 150px;
+
+    background-color: #264d35;
+    border: 8px solid #2e6743;
+
+    transform: skewY(-8deg) rotate(-5deg);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.panel div {
+    border: 1px solid #91b89c;
+}
+
+.battery {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 65px;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 
-/* SECCIONES */
+/* =========================
+   SECCIONES
+========================= */
 
 .section {
-    padding: 70px 8%;
+    padding: 85px 8%;
     text-align: center;
 }
 
-.section h2,
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2,
 .calculator h2 {
-    font-size: 34px;
-    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 12px 0 18px;
     color: #264d35;
 }
 
+.section-heading p {
+    color: #526158;
+    font-size: 17px;
+}
 
-/* TARJETAS */
+
+/* =========================
+   INTRODUCCIÓN
+========================= */
+
+.introduction {
+    background-color: white;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.info-box {
+    background-color: #f5f9f2;
+    padding: 35px 25px;
+    border-radius: 18px;
+    border-bottom: 4px solid #f2a900;
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+}
+
+.big-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.info-box h3 {
+    color: #2e6743;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   FUNCIONAMIENTO
+========================= */
+
+.funcionamiento {
+    background-color: #e8f3e6;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step {
+    position: relative;
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.step > span {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    background-color: #f2a900;
+    color: white;
+
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.step-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.step h3 {
+    color: #2e6743;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
 
 .cards {
     display: grid;
@@ -138,16 +331,17 @@ button:hover {
 
 .card {
     background-color: white;
-    padding: 30px 20px;
-    border-radius: 15px;
+    padding: 30px 22px;
+    border-radius: 18px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
 .card-icon {
@@ -161,65 +355,347 @@ button:hover {
 }
 
 .card p {
-    line-height: 1.5;
+    color: #526158;
 }
 
 
-/* FUNCIONAMIENTO */
+/* =========================
+   BENEFICIOS
+========================= */
 
-.funcionamiento {
-    background-color: #e8f3e6;
+.benefits-section {
+    background-color: #fffdf0;
 }
 
-.steps {
-    display: flex;
-    justify-content: center;
+
+/* =========================
+   COMPARACIÓN
+========================= */
+
+.comparison-section {
+    background-color: white;
+}
+
+.comparison {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-.step {
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    width: 30%;
+.comparison-box {
+    text-align: left;
+    padding: 35px;
+    border-radius: 18px;
 }
 
-.step span {
-    display: inline-flex;
-    justify-content: center;
+.comparison-box h3 {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.comparison-box ul {
+    list-style: none;
+}
+
+.comparison-box li {
+    margin: 12px 0;
+    padding-left: 10px;
+}
+
+.positive {
+    background-color: #e8f3e6;
+}
+
+.positive h3 {
+    color: #2e6743;
+}
+
+.considerations {
+    background-color: #fff8d6;
+}
+
+.considerations h3 {
+    color: #b47a00;
+}
+
+
+/* =========================
+   APLICACIONES
+========================= */
+
+.applications {
+    background-color: #e8f3e6;
+}
+
+.application-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.application-grid div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.application-grid div:hover {
+    transform: translateY(-6px);
+}
+
+.application-grid strong {
+    display: block;
+    font-size: 16px;
+    color: #2e6743;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   NUBLADO
+========================= */
+
+.cloudy-section {
+    background-color: #f5f9f2;
+}
+
+.cloudy-content {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
     align-items: center;
+    gap: 50px;
 
-    width: 45px;
-    height: 45px;
+    text-align: left;
+}
 
-    background-color: #f2a900;
-    color: white;
+.cloudy-icon {
+    font-size: 110px;
+    min-width: 180px;
+    text-align: center;
+}
 
-    border-radius: 50%;
+.cloudy-content h2 {
+    font-size: 32px;
+    color: #264d35;
+    margin: 12px 0;
+}
+
+
+/* =========================
+   FACTORES
+========================= */
+
+.factor-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.factor-grid article {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.factor-grid span {
+    font-size: 45px;
+}
+
+.factor-grid h3 {
+    color: #2e6743;
+    margin: 10px 0;
+}
+
+
+/* =========================
+   MANTENIMIENTO
+========================= */
+
+.maintenance {
+    background-color: #e8f3e6;
+}
+
+.maintenance-list {
+    max-width: 850px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    text-align: left;
+}
+
+.maintenance-list div {
+    background-color: white;
+    padding: 18px 22px;
+    border-radius: 10px;
+    color: #2e6743;
     font-weight: bold;
+}
 
+
+/* =========================
+   COLOMBIA
+========================= */
+
+.colombia {
+    background: linear-gradient(
+        135deg,
+        #fff8d6,
+        #e8f3e6
+    );
+}
+
+.colombia-content {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    text-align: left;
+}
+
+.colombia-flag {
+    font-size: 130px;
+}
+
+.colombia-content h2 {
+    color: #264d35;
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+
+.colombia-content p {
     margin-bottom: 15px;
 }
 
-.step h3 {
-    margin-bottom: 10px;
+
+/* =========================
+   FUTURO
+========================= */
+
+.future-section {
+    padding: 90px 10%;
+
+    background-color: #264d35;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.future-section h2 {
+    font-size: 38px;
+    margin: 12px 0 20px;
+}
+
+.future-section p {
+    max-width: 700px;
+    margin-bottom: 15px;
+}
+
+.future-section span {
+    color: #f2a900;
+}
+
+.future-icon {
+    font-size: 65px;
+    white-space: nowrap;
 }
 
 
-/* CALCULADORA */
+/* =========================
+   DATOS CURIOSOS
+========================= */
+
+.facts {
+    background-color: white;
+}
+
+.fact-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.fact-grid div {
+    background-color: #f5f9f2;
+    padding: 30px 20px;
+    border-radius: 15px;
+
+    font-size: 45px;
+}
+
+.fact-grid p {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #526158;
+}
+
+
+/* =========================
+   CALCULADORA
+========================= */
 
 .calculator {
+    padding: 90px 20px;
     text-align: center;
-    padding: 70px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff8d6,
+        #e8f3e6
+    );
 }
 
-.calculator p {
+.calculator-box {
+    max-width: 550px;
+    margin: 30px auto 0;
+
+    background-color: white;
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.input-group {
     margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 input {
     padding: 14px;
-    width: 250px;
+    width: 100%;
 
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -229,52 +705,82 @@ input {
 
 #resultado {
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     color: #2e6743;
 }
 
+.calculator small {
+    display: block;
+    margin-top: 20px;
+    color: #777;
+}
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     text-align: center;
-    padding: 25px;
+    padding: 40px 20px;
+
     background-color: #264d35;
     color: white;
 }
 
+.footer-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f2a900;
+    margin-bottom: 10px;
+}
 
-/* RESPONSIVE */
+.footer-line {
+    width: 80px;
+    height: 2px;
+    background-color: #f2a900;
+    margin: 20px auto;
+}
 
-@media (max-width: 900px) {
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
-
     .steps {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .step {
-        width: 80%;
+    .factor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .application-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     header {
         flex-direction: column;
@@ -282,12 +788,71 @@ footer {
     }
 
     nav {
-        gap: 12px;
-        font-size: 14px;
+        justify-content: center;
     }
 
-    .cards {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .info-grid {
         grid-template-columns: 1fr;
+    }
+
+    .comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .application-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cloudy-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .colombia-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .future-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maintenance-list {
+        grid-template-columns: 1fr;
+    }
+
+    .fact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
     }
 
     .hero {
@@ -295,18 +860,53 @@ footer {
     }
 
     .hero h1 {
-        font-size: 32px;
+        font-size: 33px;
     }
 
-    .solar-icon {
-        font-size: 100px;
+    .hero p {
+        font-size: 17px;
     }
 
-    .solar-icon div {
-        font-size: 50px;
+    .hero-buttons {
+        flex-direction: column;
     }
 
-    .step {
-        width: 100%;
+    .solar-illustration {
+        transform: scale(0.8);
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-heading h2,
+    .calculator h2 {
+        font-size: 30px;
+    }
+
+    .cards,
+    .steps,
+    .factor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .application-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .future-section {
+        padding: 70px 20px;
+    }
+
+    .future-section h2 {
+        font-size: 30px;
+    }
+
+    .calculator-box {
+        padding: 25px 20px;
     }
 }
